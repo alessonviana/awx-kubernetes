@@ -10,4 +10,4 @@ helmCharts:
   releaseName: awx
   namespace: awx
   valuesFile: values.yaml
-  #includeCRDs: true
+  includeCRDs: true

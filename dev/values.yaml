@@ -2,7 +2,7 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
-nameOverride: "awx"
+nameOverride: ""
 fullnameOverride: ""
 
 replicaCount: 1
@@ -55,18 +55,18 @@ redis:
 
 # -- The key used to encrypt secrets in the AWX database. You must set this value or provide secretKeyExistingSecret
 secretKey:
-secret_key:
+secret_key: ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBA4IxyH+ZncqD4Bl7L2+HjlKmwUUgNaaY7E8l2pTein alesson.vianaicloud.com@Antonios-MBP
 # -- The name of an existing secret in the same namespace containing a SECRET_KEY key and value
 secretKeyExistingSecret:
 
 # -- The seeded admin user credentials. You must set this value or provide defaultAdminExistingSecret
 defaultAdminUser:
 # for backwards compatibility
-default_admin_user:
+default_admin_user: alesson
 # -- The seeded admin user credentials. You must set this value or provide defaultAdminExistingSecret
-defaultAdminPassword:
+defaultAdminPassword: alesson23
 # for backwards compatibility
-default_admin_password:
+default_admin_password: alesson
 # -- The name of an existing secret in the same namespace containing `AWX_ADMIN_USER` and `AWX_ADMIN_PASSWORD` keys and values
 defaultAdminExistingSecret:
 
@@ -107,7 +107,7 @@ postgresql:
     port: "5432"
   postgresqlUsername: awx
   # -- You must set this value or provide postgresqlExistingSecret
-  postgresqlPassword:
+  postgresqlPassword: alesson23
   postgresqlDatabase: awx
   # -- Set this only if using an external postgresql database. Alternatively, you can provide this value through postgresqlExistingSecret.
   postgresqlHost:
