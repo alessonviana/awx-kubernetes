@@ -1,0 +1,13 @@
+namespace: awx
+
+resources:
+  - ../base/
+
+helmCharts:
+- name: awx
+  repo: https://adwerx.github.io/charts
+  version: 3.4.0
+  releaseName: awx
+  namespace: awx
+  valuesFile: values.yaml
+  includeCRDs: true
