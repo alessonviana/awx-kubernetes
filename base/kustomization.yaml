@@ -1,3 +1,5 @@
 resources:
   - namespace.yaml
+  - StorageClass.yaml
+  - pv.yaml
   - pvc.yaml
