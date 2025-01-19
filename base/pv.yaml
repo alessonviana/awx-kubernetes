@@ -4,7 +4,7 @@ metadata:
   name: pv-awx-postgresql
 spec:
   capacity:
-    storage: 10Gi
+    storage: 100Gi
   accessModes:
     - ReadWriteMany 
   persistentVolumeReclaimPolicy: Retain

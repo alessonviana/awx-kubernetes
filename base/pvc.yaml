@@ -8,5 +8,6 @@ spec:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 10Gi
+      storage: 50Gi
   storageClassName: nfs-storage
+  #valumeName: pv-awx-postgresql

@@ -2,5 +2,7 @@ apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
   name: nfs-storage
-provisioner: kubernetes.io/no-provisioner
+allowVolumeExpansion: true
+provisioner: cluster.local/nfs-subdir-external-provisioner #kubernetes.io/no-provisioner
+reclaimPolicy: Delete 
 volumeBindingMode: Immediate
