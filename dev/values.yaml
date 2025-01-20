@@ -4,6 +4,7 @@ AWX:
   name: awx
   spec:
     admin_user: admin
+    storageClassNames: local-storage
 
   # configurations for external postgres instance
   postgres:
@@ -17,7 +18,7 @@ AWX:
     password: alesson23 #Unset
     sslmode: prefer
     type: unmanaged
-    
+
   # customVolumes:
   #   postgres:
   #     enabled: true
