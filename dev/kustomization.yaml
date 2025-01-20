@@ -4,10 +4,10 @@ resources:
   - ../base/
 
 helmCharts:
-- name: awx-operator
-  repo: https://ansible-community.github.io/awx-operator-helm/
-  version: 2.19.1
-  releaseName: awx-operator
+- name: ansible-awx-operator
+  repo: https://ansible.github.io/awx-operator/ #https://ansible-community.github.io/awx-operator-helm/
+  version: 2.1.0 #2.19.1
+  releaseName: ansible-awx-operator
   namespace: awx
   valuesFile: values.yaml
   includeCRDs: true

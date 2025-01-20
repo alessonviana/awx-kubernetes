@@ -2,3 +2,4 @@ resources:
   - namespace.yaml
   - StorageClass.yaml
   - pvc.yaml
+  - ansible-awx.yaml

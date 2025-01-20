@@ -17,3 +17,12 @@ AWX:
     password: alesson23 #Unset
     sslmode: prefer
     type: unmanaged
+    
+  customVolumes:
+    postgres:
+      enabled: true
+      hostPath: /data/postgres-13
+    projects:
+      enabled: true
+      hostPath: /mnt/raid1/proxmox/awx-postgresql
+      size: 1Gi
