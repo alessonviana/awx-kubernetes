@@ -1,6 +1,4 @@
 resources:
   - namespace.yaml
-  - local-path-provisioner.yaml
-  #- StorageClass.yaml
-  #- pv.yaml
+  - StorageClass.yaml
   - pvc.yaml

@@ -5,9 +5,9 @@ metadata:
   namespace: awx
 spec:
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteMany
+  storageClassName: nfs-storage
   resources:
     requests:
       storage: 50Gi
-  storageClassName: nfs-storage
   #valumeName: pv-awx-postgresql

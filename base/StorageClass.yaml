@@ -2,7 +2,16 @@ apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
   name: nfs-storage
-allowVolumeExpansion: true
-provisioner: cluster.local/nfs-subdir-external-provisioner #kubernetes.io/no-provisioner
-reclaimPolicy: Delete 
+provisioner: nfs.csi.k8s.io #kubernetes.io/no-provisioner
+parameters:
+  server: 192.168.2.180
+  share: /mnt/pve/proxmox/awx-postgresql
+reclaimPolicy: Delete
 volumeBindingMode: Immediate
+allowVolumeExpansion: true
+mountOptions:
+  - hard
+  - nfsvers=4.1
+
+ 
+
