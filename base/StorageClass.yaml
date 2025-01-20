@@ -1,7 +1,7 @@
 apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
-  name: local-storage #nfs-storage
+  name: nfs-storage
 provisioner: nfs.csi.k8s.io #kubernetes.io/no-provisioner
 parameters:
   server: 192.168.2.180

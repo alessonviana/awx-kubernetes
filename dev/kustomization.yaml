@@ -6,7 +6,7 @@ resources:
 helmCharts:
 - name: awx-operator
   repo: https://ansible-community.github.io/awx-operator-helm/
-  version: 2.1.0
+  version: 2.19.1
   releaseName: awx-operator
   namespace: awx
   valuesFile: values.yaml

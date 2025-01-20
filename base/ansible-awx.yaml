@@ -5,4 +5,4 @@ metadata:
   namespace: awx
 spec:
   service_type: LoadBalancer #nodeport
-  postgres_storage_class: local-storage
+  #postgres_storage_class: nfs-storage
