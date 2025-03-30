@@ -4,7 +4,8 @@ metadata:
   name: ansible-awx
   namespace: awx
 spec:
-  service_type: LoadBalancer 
-    service_annotations:
+  service_type: LoadBalancer
+  service_annotations:
     metallb.universe.tf/loadBalancerIPs: "192.168.2.212"
+
 
