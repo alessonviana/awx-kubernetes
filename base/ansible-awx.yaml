@@ -1,8 +1,11 @@
 apiVersion: awx.ansible.com/v1beta1
 kind: AWX
 metadata:
+  annotation:
+    metallb.universe.tf/ip-allocated-from-pool: config
+    metallb.universe.tf/loadBalancerIPs: 192.168.2.210
   name: ansible-awx
   namespace: awx
 spec:
-  service_type: LoadBalancer #nodeport
-  #postgres_storage_class: nfs-storage
+  service_type: LoadBalancer 
+

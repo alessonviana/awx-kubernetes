@@ -2,10 +2,10 @@ apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
   name: nfs-storage
-provisioner: nfs.csi.k8s.io #kubernetes.io/no-provisioner
+provisioner: nfs.csi.k8s.io 
 parameters:
   server: 192.168.2.180
-  share: /mnt/raid1/proxmox/awx-postgresql #/mnt/pve/proxmox/awx-postgresql
+  share: /mnt/raid1/proxmox/awx-postgresql 
 reclaimPolicy: Delete
 volumeBindingMode: Immediate
 allowVolumeExpansion: true
