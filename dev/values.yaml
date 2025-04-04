@@ -4,7 +4,7 @@ AWX:
   name: awx
   spec:
     admin_user: admin
-    storageClassNames: local-storage
+    storageClassNames:  nfs-storage-awx
 
   # configurations for external postgres instance
   postgres:
