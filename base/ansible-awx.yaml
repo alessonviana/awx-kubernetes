@@ -5,7 +5,4 @@ metadata:
   namespace: awx
 spec:
   service_type: LoadBalancer
-  service_annotations:
-    metallb.universe.tf/loadBalancerIPs: "192.168.2.212"
-
-
+  service_annotations: '{"metallb.universe.tf/loadBalancerIPs": "192.168.2.212"}'
