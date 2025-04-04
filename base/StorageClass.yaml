@@ -5,7 +5,7 @@ metadata:
 provisioner: nfs.csi.k8s.io 
 parameters:
   server: 192.168.2.180
-  share: /mnt/raid1/proxmox//k8s/volumes/awx 
+  share: /mnt/raid1/proxmox/k8s/volumes/awx 
 reclaimPolicy: Delete
 volumeBindingMode: Immediate
 allowVolumeExpansion: true
